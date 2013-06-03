@@ -1,5 +1,5 @@
 Russiandoll::Application.routes.draw do
-  resources :dashboards
+  root to: 'dashboards#index'
 
   resources :comments
   resources :posts

@@ -1,0 +1,5 @@
+<li>
+<h3><%= post.title %></h3>
+<p class="post"><%= post.content %></p>
+<%= render partial: 'comments/comment', collection: post.comments %>
+</li>
