@@ -22,24 +22,6 @@ ActiveRecord::Schema.define(version: 20130603140546) do
 
   add_index "comments", ["post_id"], name: "index_comments_on_post_id"
 
-  create_table "customers", force: true do |t|
-    t.string   "name"
-    t.string   "address"
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "orders", force: true do |t|
-    t.string   "order_number"
-    t.integer  "customer_id"
-    t.text     "notes"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "orders", ["customer_id"], name: "index_orders_on_customer_id"
-
   create_table "posts", force: true do |t|
     t.string   "title"
     t.text     "content"
