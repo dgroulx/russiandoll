@@ -1,1 +1,3 @@
-<p class="comment"><%= comment.content %></p>
+<% cache comment do %>
+  <p class="comment"><%= comment.content %></p>
+<% end %>
